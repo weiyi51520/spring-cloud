@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-provider-a
+eureka:
+  instance:
+    hostname: hello-service-provider
+  client:
+    serviceUrl:
+      defaultZone: http://weiyi1:8001/eureka/,http://weiyi2:8002/eureka/

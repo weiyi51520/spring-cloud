@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ribbon-consumer
+
+server:
+  port: 9000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://weiyi1:8001/eureka/,http://weiyi2:8002/eureka/
