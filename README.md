@@ -26,10 +26,15 @@ consumer 服务消费者 (服务的调用方)
 microservice-discovery-eureka-ha 配置高可用的eureka集群
 
 3-ribbon
+
 microservice-consumer-movie-ribbon 的基本使用
+
 microservice-consumer-movie-ribbon-properties-customizing 通过代码自定义配置使用ribbon
+
 microservice-consumer-movie-ribbon-without-eureka Ribbon与Eureka分离调用provide
 
 4-feign
+
 microservice-consumer-movie-feign Feign的简介及基础使用
+
 microservice-consumer-movie-feign-customizing 覆写feign的默认配置及使用feign的日志
