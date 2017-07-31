@@ -21,3 +21,14 @@ consumer 服务消费者 (服务的调用方)
 健康检查:服务发现组件会通过一些机制定时检测已注册的服务，如果发现某服务无法访问了（可能是某几个心跳周期后），就将该服务从服务注册表中移除。
 
 服务发现的方式:客户端发现:ZK Eureka 服务器端发现:Consul nginx
+
+microservice-discovery-eureka-ha 配置高可用的eureka集群
+
+3-ribbon
+microservice-consumer-movie-ribbon 的基本使用
+microservice-consumer-movie-ribbon-properties-customizing 通过代码自定义配置使用ribbon
+microservice-consumer-movie-ribbon-without-eureka Ribbon与Eureka分离调用provide
+
+4-feign
+microservice-consumer-movie-feign Feign的简介及基础使用
+microservice-consumer-movie-feign-customizing 覆写feign的默认配置及使用feign的日志

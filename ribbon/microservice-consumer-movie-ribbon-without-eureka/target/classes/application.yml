@@ -1,0 +1,19 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-movie-ribbon #建议全部使用小写 与项目名称一致
+user:
+  userServicePath: http://127.0.0.1:7900/simple/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+ribbon: #How to Use Ribbon Without Eureka
+  eureka:
+    enabled: false
+microservice-provider-user:
+  ribbon:
+    listOfServers: 127.0.0.1:7900
