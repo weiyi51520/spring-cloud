@@ -5,7 +5,7 @@ import weiyi.demo.polymorphicfactory.exportfile.ExportStandardHtmlFile;
 import weiyi.demo.polymorphicfactory.exportfile.ExportStandardPdfFile;
 
 /**
- * html具体工厂角色,实现具体业务逻辑
+ * html鍏蜂綋宸ュ巶瑙掕壊,瀹炵幇鍏蜂綋涓氬姟閫昏緫
  * @author Administrator
  *
  */
@@ -19,7 +19,7 @@ public class ExportHtmlFactory implements ExportFactory {
 		}else if("financial".equals(type)){
 			return new ExportStandardPdfFile();
 		}else {
-			throw new RuntimeException("没有找到对象");
+			throw new RuntimeException("娌℃湁鎵惧埌瀵硅薄");
 		}
 	}
 

@@ -5,10 +5,10 @@ import weiyi.demo.AbstractFactory.cpu.IntelCpu;
 import weiyi.demo.AbstractFactory.mainboard.IntelMainboard;
 import weiyi.demo.AbstractFactory.mainboard.Mainboard;
 /**
- * ���󹤳�ģʽ Ϊһϵ���໥�����Ķ��󴴽�һ������
- * ���󹤳��İ���һ����Ʒ�崴��һ��������
- * �ŵ�:�ͻ���ֻ�������Ʒ�Ľӿڱ��,�л���Ʒ�巽�㡣
- * ȱ�㣺���Ӳ�Ʒ�ȼ�ʱ��Ҫ�޸����еĹ���ʵ����
+ * 抽象工厂模式 为一系列相互依赖的对象创建一个工厂
+ * 抽象工厂的按照一个产品族创建一个工厂类
+ * 优点:客户端只是面向产品的接口编程,切换产品族方便。
+ * 缺点：增加产品等级时需要修改所有的工厂实现类
  * @author weiyi
  *
  */

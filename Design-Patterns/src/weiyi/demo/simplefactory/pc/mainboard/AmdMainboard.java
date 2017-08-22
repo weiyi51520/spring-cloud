@@ -2,11 +2,11 @@ package weiyi.demo.simplefactory.pc.mainboard;
 
 public class AmdMainboard implements Mainboard {
 	/**
-     * CPU²å²ÛµÄ¿×Êı
+     * CPUæ’æ§½çš„å­”æ•°
      */
     private int cpuHoles = 0;
     /**
-     * ¹¹Ôì·½·¨£¬´«ÈëCPU²å²ÛµÄ¿×Êı
+     * æ„é€ æ–¹æ³•ï¼Œä¼ å…¥CPUæ’æ§½çš„å­”æ•°
      * @param cpuHoles
      */
     public AmdMainboard(int cpuHoles){
@@ -15,7 +15,7 @@ public class AmdMainboard implements Mainboard {
     @Override
     public void installCPU() {
         // TODO Auto-generated method stub
-        System.out.println("AMDÖ÷°åµÄCPU²å²Û¿×ÊıÊÇ£º" + cpuHoles);
+        System.out.println("AMDä¸»æ¿çš„CPUæ’æ§½å­”æ•°æ˜¯ï¼š" + cpuHoles);
     }
 
 }

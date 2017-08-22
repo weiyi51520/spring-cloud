@@ -1,23 +1,23 @@
 package weiyi.demo.builder.message;
 /**
- * µ¼ÑİÕßDirector£¬
- * Õâ¸öÀàÌá¹©Ò»¸öconstruct()·½·¨£¬´Ë·½·¨µ÷ÓÃ½¨ÔìÕßµÄ½¨Ôì·½·¨£¬
- * °üÀ¨buildTo()¡¢buildFrom()¡¢buildSubject()¡¢buildBody()¡¢buildSendDate()µÈ£¬
- * ´Ó¶øÒ»²¿·ÖÒ»²¿·ÖµØ½¨Ôì³ö²úÆ·¶ÔÏó£¬¼ÈAutoMessage¶ÔÏó¡£
+ * å¯¼æ¼”è€…Directorï¼Œ
+ * è¿™ä¸ªç±»æä¾›ä¸€ä¸ªconstruct()æ–¹æ³•ï¼Œæ­¤æ–¹æ³•è°ƒç”¨å»ºé€ è€…çš„å»ºé€ æ–¹æ³•ï¼Œ
+ * åŒ…æ‹¬buildTo()ã€buildFrom()ã€buildSubject()ã€buildBody()ã€buildSendDate()ç­‰ï¼Œ
+ * ä»è€Œä¸€éƒ¨åˆ†ä¸€éƒ¨åˆ†åœ°å»ºé€ å‡ºäº§å“å¯¹è±¡ï¼Œæ—¢AutoMessageå¯¹è±¡ã€‚
  * @author weiyi
  *
  */
 public class Director {
 	Builder builder;
 	/**
-	 * ¹¹Ôì×Ó
+	 * æ„é€ å­
 	 */
 	public Director(Builder builder) {
 		// TODO Auto-generated constructor stub
 		this.builder = builder;
 	}
 	/**
-     * ²úÆ·¹¹Ôì·½·¨£¬¸ºÔğµ÷ÓÃ¸÷Áã¼şµÄ½¨Ôì·½·¨
+     * äº§å“æ„é€ æ–¹æ³•ï¼Œè´Ÿè´£è°ƒç”¨å„é›¶ä»¶çš„å»ºé€ æ–¹æ³•
      */
     public void construct(String toAddress , String fromAddress){
         this.builder.buildTo(toAddress);

@@ -1,7 +1,7 @@
 package weiyi.demo.builder;
 /**
- * ³éÏó½¨ÔìÕßÀàBuilder
- * Ò»°ãÀ´Ëµ²úÆ·Ëù°üº¬µÄÁã¼þÊýÓë½¨Ôì·½·¨µÄÊýÄ¿Ïà·û
+ * æŠ½è±¡å»ºé€ è€…ç±»Builder
+ * ä¸€èˆ¬æ¥è¯´äº§å“æ‰€åŒ…å«çš„é›¶ä»¶æ•°ä¸Žå»ºé€ æ–¹æ³•çš„æ•°ç›®ç›¸ç¬¦
  * @author weiyi
  */
 public interface Builder {

@@ -4,39 +4,39 @@ import weiyi.demo.simplefactory.pc.cpu.Cpu;
 import weiyi.demo.simplefactory.pc.mainboard.Mainboard;
 
 /**
- * ×°»ú¹¤³ÌÊ¦Àà
+ * è£…æœºå·¥ç¨‹å¸ˆç±»
  * @author Administrator
  *
  */
 public class ComputerEngineer {
 	/**
-	 * ×°»úĞèÒªµÄCPU
+	 * è£…æœºéœ€è¦çš„CPU
 	 */
 	private Cpu cpu = null;
 	/**
-	 * ×°»úĞèÒªµÄÖ÷°å
+	 * è£…æœºéœ€è¦çš„ä¸»æ¿
 	 */
 	private Mainboard mainboard = null;
 	
 	public void makeComputer(int cpuType , int mainboard){
         /**
-         * ×é×°»úÆ÷µÄ»ù±¾²½Öè
+         * ç»„è£…æœºå™¨çš„åŸºæœ¬æ­¥éª¤
          */
-        //1:Ê×ÏÈ×¼±¸ºÃ×°»úËùĞèÒªµÄÅä¼ş
+        //1:é¦–å…ˆå‡†å¤‡å¥½è£…æœºæ‰€éœ€è¦çš„é…ä»¶
         prepareHardwares(cpuType, mainboard);
-        //2:×é×°»úÆ÷
-        //3:²âÊÔ»úÆ÷
-        //4£º½»¸¶¿Í»§
+        //2:ç»„è£…æœºå™¨
+        //3:æµ‹è¯•æœºå™¨
+        //4ï¼šäº¤ä»˜å®¢æˆ·
     }
 	private void prepareHardwares(int cpuType , int mainboard){
-        //ÕâÀïÒªÈ¥×¼±¸CPUºÍÖ÷°åµÄ¾ßÌåÊµÏÖ£¬ÎªÁËÊ¾Àı¼òµ¥£¬ÕâÀïÖ»×¼±¸ÕâÁ½¸ö
-        //¿ÉÊÇ£¬×°»ú¹¤³ÌÊ¦²¢²»ÖªµÀÈçºÎÈ¥´´½¨£¬ÔõÃ´°ìÄØ£¿
+        //è¿™é‡Œè¦å»å‡†å¤‡CPUå’Œä¸»æ¿çš„å…·ä½“å®ç°ï¼Œä¸ºäº†ç¤ºä¾‹ç®€å•ï¼Œè¿™é‡Œåªå‡†å¤‡è¿™ä¸¤ä¸ª
+        //å¯æ˜¯ï¼Œè£…æœºå·¥ç¨‹å¸ˆå¹¶ä¸çŸ¥é“å¦‚ä½•å»åˆ›å»ºï¼Œæ€ä¹ˆåŠå‘¢ï¼Ÿ
         
-        //Ö±½ÓÕÒÏàÓ¦µÄ¹¤³§»ñÈ¡
+        //ç›´æ¥æ‰¾ç›¸åº”çš„å·¥å‚è·å–
         this.cpu = CpuFactory.createCpu(cpuType);
         this.mainboard = MainboardFactory.createMainboard(mainboard);
         
-        //²âÊÔÅä¼şÊÇ·ñºÃÓÃ
+        //æµ‹è¯•é…ä»¶æ˜¯å¦å¥½ç”¨
         this.cpu.calculate();
         this.mainboard.installCPU();
 	}

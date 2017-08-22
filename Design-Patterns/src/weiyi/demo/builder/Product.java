@@ -1,7 +1,7 @@
 package weiyi.demo.builder;
 /**
- * ��Ʒ��ɫ
- * һ��ϵͳһ����ж���һ���Ĳ�Ʒ��,��Щ��Ʒ�����ǲ��������
+ * 产品角色
+ * 一个系统一般会有多以一个的产品类,这些产品可以是不相关联的
  * @author weiyi
  */
 public class Product {

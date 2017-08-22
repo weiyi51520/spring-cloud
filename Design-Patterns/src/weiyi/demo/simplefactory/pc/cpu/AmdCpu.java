@@ -2,7 +2,7 @@ package weiyi.demo.simplefactory.pc.cpu;
 
 public class AmdCpu implements Cpu {
 	/**
-	 * CPUÕë½ÅÊý
+	 * CPUé’ˆè„šæ•°
 	 */
 	private int pins =0;
 	
@@ -14,7 +14,7 @@ public class AmdCpu implements Cpu {
 	@Override
 	public void calculate() {
 		// TODO Auto-generated method stub
-		System.out.println("AMD CPUµÄÕë½ÅÊý:"+pins);
+		System.out.println("AMD CPUçš„é’ˆè„šæ•°:"+pins);
 	}
 
 }

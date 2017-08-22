@@ -4,25 +4,25 @@ import java.util.Date;
 
 public abstract class Builder {
 	protected AutoMessage msg;
-    //±êÌâÁã¼şµÄ½¨Ôì·½·¨
+    //æ ‡é¢˜é›¶ä»¶çš„å»ºé€ æ–¹æ³•
 	 public abstract void buildSubject();
-	    //ÄÚÈİÁã¼şµÄ½¨Ôì·½·¨
+	    //å†…å®¹é›¶ä»¶çš„å»ºé€ æ–¹æ³•
 	 public abstract void buildBody();
-	    //ÊÕ¼şÈËÁã¼şµÄ½¨Ôì·½·¨
+	    //æ”¶ä»¶äººé›¶ä»¶çš„å»ºé€ æ–¹æ³•
 	 public void buildTo(String to){
 	        msg.setTo(to);
 	    }
-	    //·¢¼şÈËÁã¼şµÄ½¨Ôì·½·¨
+	    //å‘ä»¶äººé›¶ä»¶çš„å»ºé€ æ–¹æ³•
 	 public void buildFrom(String from){
 	        msg.setFrom(from);
 	    }
-	    //·¢ËÍÊ±¼äÁã¼şµÄ½¨Ôì·½·¨
+	    //å‘é€æ—¶é—´é›¶ä»¶çš„å»ºé€ æ–¹æ³•
 	 public void buildSendDate(){
 	        msg.setSendDate(new Date());
 	    }
 	    /**
-	     * ÓÊ¼ş²úÆ·Íê³Éºó£¬ÓÃ´Ë·½·¨·¢ËÍÓÊ¼ş
-	     * ´Ë·½·¨Ïàµ±ÓÚ²úÆ··µ»¹·½·¨
+	     * é‚®ä»¶äº§å“å®Œæˆåï¼Œç”¨æ­¤æ–¹æ³•å‘é€é‚®ä»¶
+	     * æ­¤æ–¹æ³•ç›¸å½“äºäº§å“è¿”è¿˜æ–¹æ³•
 	     */
 	    public void sendMessage(){
 	        msg.send();

@@ -1,13 +1,13 @@
 package weiyi.demo.builder.message;
 /**
- * ¾ßÌå²úÆ·Àà
+ * å…·ä½“äº§å“ç±»
  * @author weiyi
  */
 public class GoodbyeMessage extends AutoMessage {
 	/**
-	 * ¹¹Ôì×Ó
+	 * æ„é€ å­
 	 */
 	public GoodbyeMessage(){
-		System.out.println("·¢ËÍ»¶Ó­ÏûÏ¢");
+		System.out.println("å‘é€æ¬¢è¿æ¶ˆæ¯");
 	}
 }

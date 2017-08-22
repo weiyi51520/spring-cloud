@@ -1,6 +1,6 @@
 package weiyi.demo.simplefactory.login;
 /**
- * ¹¤³§Àà
+ * å·¥å‚ç±»
  * @author Administrator
  *
  */
@@ -12,9 +12,9 @@ public class LoginManager {
 			return new DomainLogin();
 		}else{
 			/**
-			 * ÕâÀï¿ÉÅ×³ö×Ô¶¨ÒåÒì³£
+			 * è¿™é‡Œå¯æŠ›å‡ºè‡ªå®šä¹‰å¼‚å¸¸
 			 */
-			throw new RuntimeException("Ã»ÓĞÕÒµ½µÇÂ¼ÀàĞÍ");
+			throw new RuntimeException("æ²¡æœ‰æ‰¾åˆ°ç™»å½•ç±»å‹");
 		}
 	}
 	

@@ -6,9 +6,9 @@ public class ExportFinancialHtmlFile implements ExportFile {
 	public boolean export(String data) {
 		// TODO Auto-generated method stub
 		/**
-		 * 业务逻辑
+		 * 涓氬姟閫昏緫
 		 */
-		System.out.println("导出财务版HTML文件");
+		System.out.println("瀵煎嚭璐㈠姟鐗圚TML鏂囦欢");
 		return true;
 	}
 }

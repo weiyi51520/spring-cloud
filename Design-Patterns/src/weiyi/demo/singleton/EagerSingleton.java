@@ -1,16 +1,16 @@
 package weiyi.demo.singleton;
 
-//¶ñººÊ½µ¥ÀıÀà
+//æ¶æ±‰å¼å•ä¾‹ç±»
 
 public class EagerSingleton {
-	//¶öººÊ½ÊÇµäĞÍµÄ¿Õ¼ä»»Ê±¼ä£¬µ±Àà×°ÔØµÄÊ±ºò¾Í»á´´½¨ÀàµÄÊµÀı£¬²»¹ÜÄãÓÃ²»ÓÃ£¬ÏÈ´´½¨³öÀ´ 
+	//é¥¿æ±‰å¼æ˜¯å…¸å‹çš„ç©ºé—´æ¢æ—¶é—´ï¼Œå½“ç±»è£…è½½çš„æ—¶å€™å°±ä¼šåˆ›å»ºç±»çš„å®ä¾‹ï¼Œä¸ç®¡ä½ ç”¨ä¸ç”¨ï¼Œå…ˆåˆ›å»ºå‡ºæ¥ 
 	private static EagerSingleton instance = new EagerSingleton();
 	/**
-	 * Ä¬ÈÏË½ÓĞ¹¹Ôì·½·¨
+	 * é»˜è®¤ç§æœ‰æ„é€ æ–¹æ³•
 	 */
 	private EagerSingleton() {}
 	/**
-	 * ¾²Ì¬¹¤³§·½·¨
+	 * é™æ€å·¥å‚æ–¹æ³•
 	 * @return
 	 */
 	public static EagerSingleton getInstance(){

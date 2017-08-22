@@ -3,23 +3,23 @@ package weiyi.demo.builder.message;
 import weiyi.demo.builder.Product;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * @author weiyi
  */
 public class Client {
 	/**
-	 * ½¨ÔìÄ£Ê½·ÖÎªÁ½²¿·Ö
-	 * 1.Builder½Ó¿Ú ÕâÀï¶¨ÒåÁËÈé¹µ¹¹½¨¸÷¸ö²¿¼ş
-	 * 2.Director ÈçºÎ×éºÏ¹¹½¨²úÆ·
+	 * å»ºé€ æ¨¡å¼åˆ†ä¸ºä¸¤éƒ¨åˆ†
+	 * 1.Builderæ¥å£ è¿™é‡Œå®šä¹‰äº†ä¹³æ²Ÿæ„å»ºå„ä¸ªéƒ¨ä»¶
+	 * 2.Director å¦‚ä½•ç»„åˆæ„å»ºäº§å“
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//¿Í»§¶Ë¸ù¾İĞèÒª´´½¨ĞèÒªµÄ½¨ÔìÆ÷
+		//å®¢æˆ·ç«¯æ ¹æ®éœ€è¦åˆ›å»ºéœ€è¦çš„å»ºé€ å™¨
 		Builder builder = new WelcomeBuilder();
-		//½«½¨ÔìÆ÷´«Èëµ¼ÑİÖĞ
+		//å°†å»ºé€ å™¨ä¼ å…¥å¯¼æ¼”ä¸­
 	    Director director = new Director(builder);
-	    //µ¼Ñİ¸ù¾İ½¨ÔìÆ÷ÖÖÀà×é×°Áã¼ş¹¹½¨²úÆ·,ÔÚÕâÀïÃ»ÓĞ·µ»Ø²úÆ·,¶øÊÇÖ±½Óµ÷ÓÃ¹¦ÄÜ·¢ËÍmessage
+	    //å¯¼æ¼”æ ¹æ®å»ºé€ å™¨ç§ç±»ç»„è£…é›¶ä»¶æ„å»ºäº§å“,åœ¨è¿™é‡Œæ²¡æœ‰è¿”å›äº§å“,è€Œæ˜¯ç›´æ¥è°ƒç”¨åŠŸèƒ½å‘é€message
 	    director.construct("toAddress@126.com", "fromAddress@126.com");
 	}
 }

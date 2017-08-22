@@ -3,11 +3,11 @@ package weiyi.demo.AbstractFactory;
 public class Client {
 	
 	public static void main(String[] args) {
-		//´´½¨×°»ú¹¤³ÌÊ¦¶ÔÏó
+		//åˆ›å»ºè£…æœºå·¥ç¨‹å¸ˆå¯¹è±¡
         ComputerEngineer cf = new ComputerEngineer();
-        //¿Í»§Ñ¡Ôñ²¢´´½¨ĞèÒªÊ¹ÓÃµÄ²úÆ·¶ÔÏó
+        //å®¢æˆ·é€‰æ‹©å¹¶åˆ›å»ºéœ€è¦ä½¿ç”¨çš„äº§å“å¯¹è±¡
         AbstractFactory af = new IntelFactory();
-        //¸æËß×°»ú¹¤³ÌÊ¦×Ô¼ºÑ¡ÔñµÄ²úÆ·£¬ÈÃ×°»ú¹¤³ÌÊ¦×é×°µçÄÔ
+        //å‘Šè¯‰è£…æœºå·¥ç¨‹å¸ˆè‡ªå·±é€‰æ‹©çš„äº§å“ï¼Œè®©è£…æœºå·¥ç¨‹å¸ˆç»„è£…ç”µè„‘
         cf.makeComputer(af);
 	}
 }

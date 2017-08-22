@@ -8,13 +8,13 @@ public class GoodbyeBuilder extends Builder {
     @Override
     public void buildBody() {
         // TODO Auto-generated method stub
-    	msg.setBody("»¶ËÍÄÚÈİ");
+    	msg.setBody("æ¬¢é€å†…å®¹");
     }	
 	
     @Override
     public void buildSubject() {
         // TODO Auto-generated method stub
-    	msg.setSubject("»¶ËÍ±êÌâ");
+    	msg.setSubject("æ¬¢é€æ ‡é¢˜");
     }
 
 }

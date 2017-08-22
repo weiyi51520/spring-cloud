@@ -10,13 +10,13 @@ public class WelcomeBuilder extends Builder {
 	@Override
 	public void buildSubject() {
 		// TODO Auto-generated method stub
-		msg.setBody("»¶Ó­ÄÚÈÝ");
+		msg.setBody("æ¬¢è¿Žå†…å®¹");
 	}
 
 	@Override
 	public void buildBody() {
 		// TODO Auto-generated method stub
-		msg.setSubject("»¶Ó­±êÌâ");
+		msg.setSubject("æ¬¢è¿Žæ ‡é¢˜");
 	}
 
 }

@@ -1,19 +1,19 @@
 package weiyi.demo.builder;
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * @author weiyi
  *
  */
 public class Client {
 	
 	public static void main(String[] args) {
-		//´´½¨¾ßÌå½¨ÔìÕß
+		//åˆ›å»ºå…·ä½“å»ºé€ è€…
 		Builder builder = new ConcreteBuilder();
-		//´´½¨µ¼ÑİÕß,²¢°Ñ¾ßÌå½¨ÔìÕß´«¸øÖ¸»ÓÕß
+		//åˆ›å»ºå¯¼æ¼”è€…,å¹¶æŠŠå…·ä½“å»ºé€ è€…ä¼ ç»™æŒ‡æŒ¥è€…
 		Director director = new Director(builder);
-		//µ¼ÑİÕß´´½¨¾ßÌå²úÆ·
+		//å¯¼æ¼”è€…åˆ›å»ºå…·ä½“äº§å“
 		director.construct();
-		//¿Í»§¶Ë½ÓÊÜ²úÆ·
+		//å®¢æˆ·ç«¯æ¥å—äº§å“
 		Product product = builder.retrieveResult();
 		System.out.println(product.getPart1());
 		System.out.println(product.getPart2());

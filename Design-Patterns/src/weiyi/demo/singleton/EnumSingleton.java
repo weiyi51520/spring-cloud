@@ -1,19 +1,19 @@
 package weiyi.demo.singleton;
 /**
- * Ê¹ÓÃÃ¶¾ÙÊµÏÖµ¥Àı 
+ * ä½¿ç”¨æšä¸¾å®ç°å•ä¾‹ 
  * @author Administrator
  *
  */
 public enum EnumSingleton {
 	/**
-	 * Ã¶¾ÙÔªËØ,´ú±íÁËÒ»¸öÊµÀı
+	 * æšä¸¾å…ƒç´ ,ä»£è¡¨äº†ä¸€ä¸ªå®ä¾‹
 	 */
 	uniqueInstance;
 	
 	/**
-	 * µ¥Àı¿ÉÒÔÓĞ×Ô¼ºµÄ²Ù×÷
+	 * å•ä¾‹å¯ä»¥æœ‰è‡ªå·±çš„æ“ä½œ
 	 */
 	public void singletonOperation(){
-		//¹¦ÄÜ´¦Àí
+		//åŠŸèƒ½å¤„ç†
 	}
 }

@@ -1,7 +1,7 @@
 package weiyi.demo.builder;
 /**
- * ¾ßÌå½¨ÔìÀà ËüÃÇÔÚÓ¦ÓÃ³ÌĞòµ÷ÓÃÏÂ´´½¨²úÆ·µÄÊµÀı
- * 1 ÊµÏÖ³éÏó½¨ÔìÕßÉùÃ÷µÄ½Ó¿Ú 2 ÔÚ½¨ÔìÍê³ÉºóÌá¹©²úÆ·µÄÊµÀı 
+ * å…·ä½“å»ºé€ ç±» å®ƒä»¬åœ¨åº”ç”¨ç¨‹åºè°ƒç”¨ä¸‹åˆ›å»ºäº§å“çš„å®ä¾‹
+ * 1 å®ç°æŠ½è±¡å»ºé€ è€…å£°æ˜çš„æ¥å£ 2 åœ¨å»ºé€ å®Œæˆåæä¾›äº§å“çš„å®ä¾‹ 
  * @author weiyi
  */
 public class ConcreteBuilder implements Builder{
@@ -11,13 +11,13 @@ public class ConcreteBuilder implements Builder{
 	@Override
 	public void buildPart1() {
 		// TODO Auto-generated method stub
-		product.setPart1("±àºÅ:9527");
+		product.setPart1("ç¼–å·:9527");
 	}
 
 	@Override
 	public void buildPart2() {
 		// TODO Auto-generated method stub
-		product.setPart2("Ãû³Æ:XXX");
+		product.setPart2("åç§°:XXX");
 	}
 
 	@Override

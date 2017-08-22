@@ -4,7 +4,7 @@ import weiyi.demo.simplefactory.pc.mainboard.AmdMainboard;
 import weiyi.demo.simplefactory.pc.mainboard.IntelMainboard;
 import weiyi.demo.simplefactory.pc.mainboard.Mainboard;
 /**
- * Ö÷°å¹¤³§Àà
+ * ä¸»æ¿å·¥å‚ç±»
  * @author Administrator
  *
  */

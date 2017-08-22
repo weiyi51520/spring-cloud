@@ -2,11 +2,11 @@ package weiyi.demo.builder;
 
 public class Director {
 	/**
-	 * ĞèÒªÊ¹ÓÃµÄ½¨ÔìÆ÷
+	 * éœ€è¦ä½¿ç”¨çš„å»ºé€ å™¨
 	 */
 	private Builder builder;
 	/**
-	 * ´«Èë½¨ÔìÆ÷¶ÔÏó
+	 * ä¼ å…¥å»ºé€ å™¨å¯¹è±¡
 	 * @param builder
 	 */
 	public Director(Builder builder) {
@@ -14,7 +14,7 @@ public class Director {
 		this.builder = builder;
 	}
 	/**
-	 * Ö¸»ÓÀàµÄ²úÆ·¹¹Ôì·½·¨,¸ºÔğ°´²½Öèµ÷ÓÃÁã¼ş½¨Ôì·½·¨¹¹½¨²úÆ·
+	 * æŒ‡æŒ¥ç±»çš„äº§å“æ„é€ æ–¹æ³•,è´Ÿè´£æŒ‰æ­¥éª¤è°ƒç”¨é›¶ä»¶å»ºé€ æ–¹æ³•æ„å»ºäº§å“
 	 */
 	public void construct(){
 		builder.buildPart1();

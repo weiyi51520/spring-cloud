@@ -2,7 +2,7 @@ package weiyi.demo.AbstractFactory.cpu;
 
 public class IntelCpu implements Cpu {
 	/**
-	 * CPUÕë½ÅÊý
+	 * CPUé’ˆè„šæ•°
 	 */
 	private int pins=0;
 	
@@ -13,7 +13,7 @@ public class IntelCpu implements Cpu {
 	@Override
 	public void calculate() {
 		// TODO Auto-generated method stub
-		System.out.println("Intel CPUµÄÕë½ÅÊý:"+pins);
+		System.out.println("Intel CPUçš„é’ˆè„šæ•°:"+pins);
 	}
 	
 }

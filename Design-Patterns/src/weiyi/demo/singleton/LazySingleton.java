@@ -1,15 +1,15 @@
 package weiyi.demo.singleton;
-//ÀÁººÊ½µ¥ÀıÀà
+//æ‡’æ±‰å¼å•ä¾‹ç±»
 public class LazySingleton {
-	//ÀÁººÊ½ÉÏÀ´Ê±Ã»ÓĞÖ±½Ó´´½¨ÊµÀı,ÔÚµ÷ÓÃgetInstanceÊ±²Å»á´´½¨ÊµÀı
+	//æ‡’æ±‰å¼ä¸Šæ¥æ—¶æ²¡æœ‰ç›´æ¥åˆ›å»ºå®ä¾‹,åœ¨è°ƒç”¨getInstanceæ—¶æ‰ä¼šåˆ›å»ºå®ä¾‹
 	private static LazySingleton instance = null;
     /**
-     * Ë½ÓĞÄ¬ÈÏ¹¹Ôì×Ó
+     * ç§æœ‰é»˜è®¤æ„é€ å­
      */
     private LazySingleton(){}
     /**
-     * ¾²Ì¬¹¤³§·½·¨
-     * Ê¹ÓÃÁËsynchronized¹Ø¼ü×Ö ·ÀÖ¹¶àÏß³Ì´´½¨¶à¸öÊµÀı
+     * é™æ€å·¥å‚æ–¹æ³•
+     * ä½¿ç”¨äº†synchronizedå…³é”®å­— é˜²æ­¢å¤šçº¿ç¨‹åˆ›å»ºå¤šä¸ªå®ä¾‹
      */
     public static synchronized LazySingleton getInstance(){
         if(instance == null){

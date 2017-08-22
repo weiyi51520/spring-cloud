@@ -1,6 +1,6 @@
 package weiyi.demo.simplefactory.pc;
 /**
- * ╪Р╣╔╧╓Ё╖дёй╫ й╣ожакв╟╩З ╣╚йгcpu ╨м mainboard ╣двИ╨о╧ьо╣ц╩спочжф
+ * Г╝─Е█∙Е╥╔Е▌┌Ф╗║Е╪▐ Е╝·Г▌╟Д╨├Хё┘Ф°╨ Д╫├Ф≤╞cpu Е▓▄ mainboard Г └Г╩└Е░┬Е┘ЁГЁ╩Ф╡║Ф°┴И≥░Е┬╤
  * @author Administrator
  *
  */

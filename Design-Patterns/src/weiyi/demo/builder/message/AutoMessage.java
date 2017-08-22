@@ -3,28 +3,28 @@ package weiyi.demo.builder.message;
 import java.util.Date;
 
 /**
- * ³éÏóÀà 
+ * æŠ½è±¡ç±» 
  * @author weiyi
  */
 public abstract class AutoMessage {
 	
-	//ÊÕ¼şÈËµØÖ·
+	//æ”¶ä»¶äººåœ°å€
 	private String to;
-	//·¢¼şÈËµØÖ·
+	//å‘ä»¶äººåœ°å€
 	private String from;
-	//±êÌâ
+	//æ ‡é¢˜
 	private String subject;
-	//ÄÚÈİ
+	//å†…å®¹
 	private String body;
-	//·¢ËÍÈÕÆÚ
+	//å‘é€æ—¥æœŸ
 	private Date sendDate;
 	
 	public void send(){
-		System.out.println("ÊÕ¼şÈËµØÖ·£º" + to);
-        System.out.println("·¢¼şÈËµØÖ·£º" + from);
-        System.out.println("±êÌâ£º" + subject);
-        System.out.println("ÄÚÈİ£º" + body);
-        System.out.println("·¢ËÍÈÕÆÚ£º" + sendDate);
+		System.out.println("æ”¶ä»¶äººåœ°å€ï¼š" + to);
+        System.out.println("å‘ä»¶äººåœ°å€ï¼š" + from);
+        System.out.println("æ ‡é¢˜ï¼š" + subject);
+        System.out.println("å†…å®¹ï¼š" + body);
+        System.out.println("å‘é€æ—¥æœŸï¼š" + sendDate);
 	}
 
 	public String getTo() {

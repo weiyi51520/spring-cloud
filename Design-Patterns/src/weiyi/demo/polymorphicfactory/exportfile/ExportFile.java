@@ -1,6 +1,6 @@
 package weiyi.demo.polymorphicfactory.exportfile;
 /**
- * 抽象导出角色类源代码
+ * 鎶借薄瀵煎嚭瑙掕壊绫绘簮浠ｇ爜
  * @author Administrator
  *
  */

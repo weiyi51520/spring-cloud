@@ -4,7 +4,7 @@ import weiyi.demo.simplefactory.pc.cpu.AmdCpu;
 import weiyi.demo.simplefactory.pc.cpu.Cpu;
 import weiyi.demo.simplefactory.pc.cpu.IntelCpu;
 /**
- * CPU¹¤³§Àà
+ * CPUå·¥åŽ‚ç±»
  * @author Administrator
  *
  */

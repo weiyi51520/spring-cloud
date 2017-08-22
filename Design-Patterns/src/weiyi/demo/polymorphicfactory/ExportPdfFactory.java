@@ -4,7 +4,7 @@ import weiyi.demo.polymorphicfactory.exportfile.ExportFile;
 import weiyi.demo.polymorphicfactory.exportfile.ExportFinancialPdfFile;
 import weiyi.demo.polymorphicfactory.exportfile.ExportStandardPdfFile;
 /**
- * pdf具体工厂角色
+ * pdf鍏蜂綋宸ュ巶瑙掕壊
  * @author Administrator
  *
  */

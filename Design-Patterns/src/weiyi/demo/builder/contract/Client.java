@@ -2,21 +2,22 @@ package weiyi.demo.builder.contract;
 
 import java.util.Date;
 /**
- * ¿Í»§¶ËÀà
+ * å®¢æˆ·ç«¯ç±»
+ * æœ¬ä¾‹ä¸­å°†å…·ä½“å»ºé€ è€…åˆå¹¶åˆ°äº†å¯¹è±¡ä¸­,å¹¶å°†äº§å“å¯¹è±¡çš„æ„é€ å‡½æ•°ç§æœ‰åŒ–ï¼Œé˜²æ­¢å®¢æˆ·ç«¯ä¸ä½¿ç”¨å»ºé€ å™¨æ¥æ„å»ºäº§å“å¯¹è±¡ã€‚
  * @author weiyi
  */
 public class Client {
 	
 	public static void main(String[] args) {
-		//´´½¨¹¹½¨Æ÷¶ÔÏó
+		//åˆ›å»ºæ„å»ºå™¨å¯¹è±¡
 		String contractId= "9527";
 		long beginDate = 123L;
 		long endDate = 245L;
 		InsuranceContract.ConcreteBuilder builder = 
 				new InsuranceContract.ConcreteBuilder(contractId, beginDate, endDate);
-		//ÉèÖÃĞèÒªµÄÊı¾İ,È»ºó¹¹½¨±£ÏÕºÏÍ¬¶ÔÏó
-		InsuranceContract contract = builder.setPersonName("Ğ¡Ã÷").setOtherData("test").build();
-		//²Ù×÷±£ÏÕºÏÍ¬¶ÔÏóµÄ·½·¨
+		//è®¾ç½®éœ€è¦çš„æ•°æ®,ç„¶åæ„å»ºä¿é™©åˆåŒå¯¹è±¡
+		InsuranceContract contract = builder.setPersonName("å°æ˜").setOtherData("test").build();
+		//æ“ä½œä¿é™©åˆåŒå¯¹è±¡çš„æ–¹æ³•
 		contract.someOperation();
 	}
 }

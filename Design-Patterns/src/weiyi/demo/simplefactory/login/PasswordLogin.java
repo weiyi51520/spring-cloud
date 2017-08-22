@@ -1,6 +1,6 @@
 package weiyi.demo.simplefactory.login;
 /**
- * 具体产品
+ * 鍏蜂綋浜у搧
  * @author weiyi
  *
  */
@@ -10,7 +10,7 @@ public class PasswordLogin implements Login {
 	public boolean verify(String name, String password) {
 		// TODO Auto-generated method stub
 		/**
-		 * 业务逻辑
+		 * 涓氬姟閫昏緫
 		 */
 		return true;
 	}

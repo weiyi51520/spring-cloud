@@ -3,13 +3,13 @@ package weiyi.demo.polymorphicfactory;
 import weiyi.demo.polymorphicfactory.exportfile.ExportFile;
 
 /**
- * ³éÏó¹¤³§½ÇÉ«ExportFactory
- * ¶àÌ¬¹¤³§Ä£Ê½µÄºËĞÄ
+ * æŠ½è±¡å·¥å‚è§’è‰²ExportFactory
+ * å¤šæ€å·¥å‚æ¨¡å¼çš„æ ¸å¿ƒ
  * @author Administrator
  */
 public interface ExportFactory {
 	/**
-	 * ÉùÃ÷Ò»¸ö¹¤³§·½·¨,¾ßÌå¹¤³§½ÇÉ«È¥¸ù¾İtypeÊµÏÖ¾ßÌåÒµÎñ
+	 * å£°æ˜ä¸€ä¸ªå·¥å‚æ–¹æ³•,å…·ä½“å·¥å‚è§’è‰²å»æ ¹æ®typeå®ç°å…·ä½“ä¸šåŠ¡
 	 * @param type
 	 * @return
 	 */

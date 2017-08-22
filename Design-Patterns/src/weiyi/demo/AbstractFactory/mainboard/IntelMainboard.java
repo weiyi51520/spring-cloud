@@ -2,7 +2,7 @@ package weiyi.demo.AbstractFactory.mainboard;
 
 public class IntelMainboard implements Mainboard{
 	/**
-	 * CPU²å²ÛµÄ¿×Êı
+	 * CPUæ’æ§½çš„å­”æ•°
 	 */
 	private int cpuHoles =0;
 	
@@ -13,7 +13,7 @@ public class IntelMainboard implements Mainboard{
 	@Override
 	public void installCPU() {
 		// TODO Auto-generated method stub
-		System.out.println("IntelÖ÷°åµÄCPU²å²Û¿×ÊıÊÇ:"+cpuHoles);
+		System.out.println("Intelä¸»æ¿çš„CPUæ’æ§½å­”æ•°æ˜¯:"+cpuHoles);
 	}
 	
 }

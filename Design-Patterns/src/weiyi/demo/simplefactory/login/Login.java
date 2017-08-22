@@ -1,10 +1,10 @@
 package weiyi.demo.simplefactory.login;
 /**
- * 抽象产品
+ * 鎶借薄浜у搧
  * @author weiyi
  *
  */
 public interface Login {
-	//登录验证
+	//鐧诲綍楠岃瘉
 	public boolean verify(String name,String password);
 }

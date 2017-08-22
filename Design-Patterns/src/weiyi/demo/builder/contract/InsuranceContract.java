@@ -1,22 +1,22 @@
 package weiyi.demo.builder.contract;
 
 public class InsuranceContract {
-	//±£ÏÕºÏÍ¬±àºÅ
+	//ä¿é™©åˆåŒç¼–å·
 	private String contractId;
 	/**
-	 * ±»±£ÏÕÈËÔ±µÄÃû³Æ£¬Í¬Ò»·İ±£ÏÕºÏÍ¬£¬ÒªÃ´¸úÈËÔ±Ç©¶©£¬ÒªÃ´¸ú¹«Ë¾Ç©¶©
-	 * Ò²¾ÍÊÇËµ£¬¡°±»±£ÏÕÈËÔ±¡±ºÍ¡°±»±£ÏÕ¹«Ë¾¡±ÕâÁ½¸öÊôĞÔ£¬²»¿ÉÄÜÍ¬Ê±ÓĞÖµ
+	 * è¢«ä¿é™©äººå‘˜çš„åç§°ï¼ŒåŒä¸€ä»½ä¿é™©åˆåŒï¼Œè¦ä¹ˆè·Ÿäººå‘˜ç­¾è®¢ï¼Œè¦ä¹ˆè·Ÿå…¬å¸ç­¾è®¢
+	 * ä¹Ÿå°±æ˜¯è¯´ï¼Œâ€œè¢«ä¿é™©äººå‘˜â€å’Œâ€œè¢«ä¿é™©å…¬å¸â€è¿™ä¸¤ä¸ªå±æ€§ï¼Œä¸å¯èƒ½åŒæ—¶æœ‰å€¼
 	 */
 	private String personName;
-	//±»±£ÏÕÈË¹«Ë¾µÄÃû³Æ
+	//è¢«ä¿é™©äººå…¬å¸çš„åç§°
 	private String companyName;
-	//±£ÏÕ¿ªÊ¼ÉúĞ§ÈÕÆÚ
+	//ä¿é™©å¼€å§‹ç”Ÿæ•ˆæ—¥æœŸ
 	private long beginDate;
-	//±£ÏÕÊ§Ğ§ÈÕÆÚ£¬Ò»¶¨»á´óÓÚ±£ÏÕ¿ªÊ¼ÉúĞ§ÈÕÆÚ
+	//ä¿é™©å¤±æ•ˆæ—¥æœŸï¼Œä¸€å®šä¼šå¤§äºä¿é™©å¼€å§‹ç”Ÿæ•ˆæ—¥æœŸ
 	private long endDate;
-	//ÆäËûÊı¾İ
+	//å…¶ä»–æ•°æ®
 	private String otherData;
-	//Ë½ÓĞ¹¹Ôì·½·¨
+	//ç§æœ‰æ„é€ æ–¹æ³•
 	private InsuranceContract(ConcreteBuilder builder){
 		this.contractId = builder.contractId;
         this.personName = builder.personName;
@@ -27,10 +27,10 @@ public class InsuranceContract {
 		
 	}
 	/**
-	 * ±£ÏÕºÏÍ¬µÄÒ»Ğ©²Ù×÷
+	 * ä¿é™©åˆåŒçš„ä¸€äº›æ“ä½œ
 	 */
 	public void someOperation(){
-		System.out.println("µ±Ç°ÕıÔÚ²Ù×÷µÄ±£ÏÕºÏÍ¬±àºÅÎª¡¾"+this.contractId+"¡¿");
+		System.out.println("å½“å‰æ­£åœ¨æ“ä½œçš„ä¿é™©åˆåŒç¼–å·ä¸ºã€"+this.contractId+"ã€‘");
 	}
 	public static class ConcreteBuilder{
 		private String contractId;
@@ -40,55 +40,55 @@ public class InsuranceContract {
 		private long endDate;
 		private String otherData;
 		/**
-		 * ¹¹Ôì·½·¨
-		 * @param contractId ±£ÏÕºÏÍ¬±àºÅ
-		 * @param beginDate ÉúĞ§Ê±ÆÚ
-		 * @param endDate Ê§Ğ§ÈÕÆÚ
+		 * æ„é€ æ–¹æ³•
+		 * @param contractId ä¿é™©åˆåŒç¼–å·
+		 * @param beginDate ç”Ÿæ•ˆæ—¶æœŸ
+		 * @param endDate å¤±æ•ˆæ—¥æœŸ
 		 */
 		public ConcreteBuilder(String contractId,long beginDate,long endDate){
 			this.contractId=contractId;
 			this.beginDate = beginDate;
 			this.endDate = endDate;
 		}
-		//±»±£ÏÕÈËÔ±µÄÃû³Æ
+		//è¢«ä¿é™©äººå‘˜çš„åç§°
 		public ConcreteBuilder setPersonName(String personName){
 			this.personName= personName;
 			return this;
 		}
-		//±»±£ÏÕ¹«Ë¾µÄÃû³Æ
+		//è¢«ä¿é™©å…¬å¸çš„åç§°
 		public ConcreteBuilder setCompanyName(String companyName){
 			this.companyName= companyName;
 			return this;
 		}
-		//ÆäËûÊı¾İ
+		//å…¶ä»–æ•°æ®
 		public ConcreteBuilder setOtherData(String otherData){
 			this.otherData= otherData;
 			return this;
 		}
 		/**
-		 * ¹¹½¨ÕæÕıµÄ¶ÔÏó±ù·µ»Ø
-		 * @return ¹¹½¨µÄ±£ÏÕºÏÍ¬¶ÔÏó
+		 * æ„å»ºçœŸæ­£çš„å¯¹è±¡å†°è¿”å›
+		 * @return æ„å»ºçš„ä¿é™©åˆåŒå¯¹è±¡
 		 */
 		public InsuranceContract build(){
 			if(contractId == null || contractId.trim().length()==0){
-				throw new IllegalArgumentException("ºÏÍ¬±àºÅ²»ÄÜÎª¿Õ");
+				throw new IllegalArgumentException("åˆåŒç¼–å·ä¸èƒ½ä¸ºç©º");
 			}
 			boolean signPerson = (personName!=null && personName.trim().length()>0);
 			boolean signCompany = (companyName!=null && companyName.trim().length()>0);
 			if(signPerson&&signCompany){
-				throw new IllegalArgumentException("Ò»·İ±£ÏÕºÏÍ¬²»ÄÜÍ¬Ê±Óë¸öÈËºÍ¹«Ë¾Ç©¶©");
+				throw new IllegalArgumentException("ä¸€ä»½ä¿é™©åˆåŒä¸èƒ½åŒæ—¶ä¸ä¸ªäººå’Œå…¬å¸ç­¾è®¢");
 			}
 			if(signPerson==false&&signCompany==false){
-				throw new IllegalArgumentException("Ò»·İ±£ÏÕºÏÍ¬²»ÄÜ²»ÄÜÃ»ÓĞÇ©¶©¶ÔÏó");
+				throw new IllegalArgumentException("ä¸€ä»½ä¿é™©åˆåŒä¸èƒ½ä¸èƒ½æ²¡æœ‰ç­¾è®¢å¯¹è±¡");
 			}
 			if(beginDate<=0){
-				throw new IllegalArgumentException("Ò»·İ±£ÏÕºÏÍ¬±ØĞëÓĞÉúĞ§ÈÕÆÚ");
+				throw new IllegalArgumentException("ä¸€ä»½ä¿é™©åˆåŒå¿…é¡»æœ‰ç”Ÿæ•ˆæ—¥æœŸ");
 			}
 			if(endDate<=0){
-				throw new IllegalArgumentException("Ò»·İ±£ÏÕºÏÍ¬±ØĞëÓĞÊ§Ğ§ÈÕÆÚ");
+				throw new IllegalArgumentException("ä¸€ä»½ä¿é™©åˆåŒå¿…é¡»æœ‰å¤±æ•ˆæ—¥æœŸ");
 			}
 			if(endDate<beginDate){
-				throw new IllegalArgumentException("Ò»·İ±£ÏÕºÏÍ¬µÄÊ§Ğ§ÈÕÆÚ±ØĞë´óÓÚÉúĞ§ÈÕÆÚ");
+				throw new IllegalArgumentException("ä¸€ä»½ä¿é™©åˆåŒçš„å¤±æ•ˆæ—¥æœŸå¿…é¡»å¤§äºç”Ÿæ•ˆæ—¥æœŸ");
 			}
 			return new InsuranceContract(this);
 		}
